@@ -9,6 +9,14 @@
   <%= @article.text %>
 </p>
 
+<h2>haha estos vatos k?</h2>
+<% @article.comments.each do |comment| %>
+    <%= render @article.comments%>
+<% end %>
+
+<h2>E we se te olvidó esto:</h2>
+<%= render 'comments/form'%>
+
 <div>
   <%= link_to 'Editar', edit_article_path(@article) %>
 </div>

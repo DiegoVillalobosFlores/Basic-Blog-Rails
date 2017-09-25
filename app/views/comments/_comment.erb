@@ -1,0 +1,15 @@
+<p>
+  <strong>Vato:</strong>
+  <%= comment.commenter %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to '¿Es un juguete nuevo?', [comment.article, comment],
+              method: :delete,
+              data: { confirm: '¡Epale esa es mi manita!' } %>
+</p>
